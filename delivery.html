@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Information | Australia &amp; Worldwide | Dar Al Haya</title>
+  <meta name="description" content="Dar Al Haya delivery information for Australian and international clients. Express door-to-door shipping from Dubai to Sydney, Melbourne, Brisbane and Perth.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Accordion styles for delivery FAQs */
+    .faq-container {
+      max-width: 960px;
+      margin: 0 auto 64px;
+    }
+    .faq-item {
+      background: #FFFFFF;
+      border: 1px solid var(--color-card-border);
+      border-radius: 2px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+    }
+    .faq-item-head {
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition-smooth);
+    }
+    .faq-item-head:hover {
+      background-color: var(--color-card-cream);
+    }
+    .faq-question-title {
+      font-family: var(--font-serif-title);
+      font-size: 1.25rem;
+      color: var(--color-text-title);
+      font-weight: 500;
+    }
+    .faq-icon-arrow {
+      color: var(--color-gold-btn);
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+    .faq-item-head.open .faq-icon-arrow {
+      transform: rotate(180deg);
+    }
+    .faq-item-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+      padding: 0 24px;
+      background-color: #FCFAF7;
+    }
+    .faq-item-body p {
+      padding: 16px 0 20px;
+      font-size: 0.94rem;
+      color: var(--color-text-body);
+      line-height: 1.65;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo-wrap" title="Dar Al Haya Dubai">
+        <img src="assets/images/logo.svg" alt="Dar Al Haya Palace Logo">
+      </a>
+
+      <!-- Desktop Nav matching template -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-separator">|</li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-separator">|</li>
+          <li class="nav-item"><a href="collections.html" class="nav-link">Our Collections</a></li>
+          <li class="nav-separator">|</li>
+          <li class="nav-item"><a href="shop.html" class="nav-link">Catalog Showcase</a></li>
+          <li class="nav-separator">|</li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-separator">|</li>
+          <li class="nav-item"><a href="delivery.html" class="nav-link active">Delivery Information</a></li>
+          <li class="nav-separator">|</li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/61488892341?text=Hello%20Dar%20Al%20Haya%20Australia%2C%20I%20would%20like%20to%20check%20delivery%20times%20and%20rates." target="_blank" rel="noopener" class="btn-header-wa">
+          <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.777.818 2.791.819 3.179 0 5.767-2.587 5.768-5.766.001-3.181-2.587-5.768-5.768-5.768zm0-2c4.28 0 7.768 3.488 7.768 7.768 0 4.281-3.488 7.768-7.768 7.768-1.328 0-2.586-.347-3.69-.968l-4.341 1.139 1.161-4.241c-.7-1.164-1.098-2.498-1.098-3.698 0-4.28 3.488-7.768 7.768-7.768z"/></svg>
+          <span>WhatsApp VIP</span>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Open Mobile Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-menu-drawer">
+    <div class="mobile-drawer-header">
+      <img src="assets/images/logo.svg" alt="Dar Al Haya" style="height: 38px;">
+      <button class="mobile-close-btn" aria-label="Close Menu">✕</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li><a href="collections.html" class="mobile-nav-link">Our Collections</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+      <li><a href="delivery.html" class="mobile-nav-link active">Delivery Information</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+      <li><a href="shop.html" class="mobile-nav-link" style="color:var(--color-gold);">Extended Catalog</a></li>
+    </ul>
+  </aside>
+
+  <!-- ========================================================================
+       DELIVERY INFORMATION (Matches media_1794719983502_b18d92f7.jpg)
+       ======================================================================== -->
+  <main class="page-title-section" style="padding-bottom: 0;">
+    <div class="container">
+      <h1 class="page-title">Delivery Information</h1>
+      <div class="gold-accent-line" style="margin-bottom: 36px;"></div>
+
+      <!-- Hero Luxury Gift Packaging Image (Retouched with Dar Al Haya Branding) -->
+      <div class="delivery-hero-box-wrap">
+        <img src="assets/images/delivery_hero.jpg" alt="Dar Al Haya Luxury Gift Packaging and Gold Ribbon Box" loading="eager">
+      </div>
+
+      <!-- 2 Large Delivery Cards matching template layout -->
+      <div class="delivery-cards-grid">
+        
+        <!-- Card 1: Australia Express Delivery -->
+        <article class="delivery-info-card">
+          <div>
+            <h2 class="delivery-card-title">Australia Delivery</h2>
+            <div class="delivery-card-divider"></div>
+            <p class="delivery-card-text">
+              Express door-to-door delivery across Sydney, Melbourne, Brisbane, Perth &amp; Regional Australia.<br>
+              Contact us for delivery fees and estimated times.
+            </p>
+          </div>
+          <a href="https://wa.me/61488892341?text=Hello%20Dar%20Al%20Haya%20Australia%2C%20I%20would%20like%20to%20check%20delivery%20fees%20and%20estimated%20times%20for%20my%20Australian%20postcode." target="_blank" rel="noopener" class="btn-whatsapp-card">
+            <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.777.818 2.791.819 3.179 0 5.767-2.587 5.768-5.766.001-3.181-2.587-5.768-5.768-5.768zm0-2c4.28 0 7.768 3.488 7.768 7.768 0 4.281-3.488 7.768-7.768 7.768-1.328 0-2.586-.347-3.69-.968l-4.341 1.139 1.161-4.241c-.7-1.164-1.098-2.498-1.098-3.698 0-4.28 3.488-7.768 7.768-7.768z"/></svg>
+            <span>Check Delivery on WhatsApp</span>
+          </a>
+        </article>
+
+        <!-- Card 2: International Delivery -->
+        <article class="delivery-info-card">
+          <div>
+            <h2 class="delivery-card-title">International Delivery</h2>
+            <div class="delivery-card-divider"></div>
+            <p class="delivery-card-text">
+              Worldwide courier delivery to New Zealand, UK, USA, Gulf &amp; Europe via DHL Express.<br>
+              Contact us for delivery fees and estimated times.
+            </p>
+          </div>
+          <a href="https://wa.me/61488892341?text=Hello%20Dar%20Al%20Haya%2C%20I%20would%20like%20to%20check%20international%20delivery%20fees%20and%20estimated%20times." target="_blank" rel="noopener" class="btn-whatsapp-card">
+            <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.777.818 2.791.819 3.179 0 5.767-2.587 5.768-5.768zm0-2c4.28 0 7.768 3.488 7.768 7.768 0 4.281-3.488 7.768-7.768 7.768-1.328 0-2.586-.347-3.69-.968l-4.341 1.139 1.161-4.241c-.7-1.164-1.098-2.498-1.098-3.698 0-4.28 3.488-7.768 7.768-7.768z"/></svg>
+            <span>Check Delivery on WhatsApp</span>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Australian Shipping Features Grid -->
+      <div class="delivery-features-grid">
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 class="feature-title">Fast AU Transit (3–5 Days)</h3>
+          <p class="feature-desc">Dispatched with DHL Express &amp; Australia Post with full end-to-end live tracking.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3 class="feature-title">Signature Gift Packaging</h3>
+          <p class="feature-desc">Arrives in a rigid Dar Al Haya keepsake box, tied with gold satin ribbon and gift bag.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 class="feature-title">Custom Length Tailoring</h3>
+          <p class="feature-desc">Choose lengths from 52" to 62". Custom alterations prepared before dispatch.</p>
+        </div>
+      </div>
+
+      <!-- Delivery FAQ Accordion -->
+      <section class="faq-container">
+        <h3 class="section-title" style="font-size: 2rem; margin-bottom: 8px;">Frequently Asked Questions</h3>
+        <p class="section-desc">Details regarding delivery, sizing, and customs for our Australian clients.</p>
+
+        <div class="faq-item">
+          <div class="faq-item-head">
+            <span class="faq-question-title">How long does shipping to Sydney, Melbourne, Brisbane &amp; Perth take?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </div>
+          <div class="faq-item-body">
+            <p>Orders in stock are packed in Dubai and dispatched within 24 hours. Express air transit via DHL Express typically takes 3 to 5 business days to major Australian metropolitan areas (Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra) and 5 to 7 business days to regional locations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item-head">
+            <span class="faq-question-title">Are Australian customs duties or GST included?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </div>
+          <div class="faq-item-body">
+            <p>Orders valued under AUD $1,000 are typically exempt from Australian customs import tariffs. All export documentation and customs clearance procedures are managed by our Dubai logistics team for seamless, hassle-free delivery.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item-head">
+            <span class="faq-question-title">How do I determine my abaya size and length?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </div>
+          <div class="faq-item-body">
+            <p>Abaya sizes are determined by length (measured from top of shoulder to floor in inches):
+            <br>• Height 150–154 cm (4'11"–5'1") &rarr; Length 52"
+            <br>• Height 155–160 cm (5'1"–5'3") &rarr; Length 54"
+            <br>• Height 161–165 cm (5'3"–5'5") &rarr; Length 56"
+            <br>• Height 166–170 cm (5'5"–5'7") &rarr; Length 58"
+            <br>• Height 171–175 cm (5'7"–5'9") &rarr; Length 60"
+            <br>• Height 176+ cm (5'9"+) &rarr; Length 62"
+            <br>For guidance, message our Australian stylist directly on WhatsApp!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item-head">
+            <span class="faq-question-title">What is your exchange and return policy?</span>
+            <span class="faq-icon-arrow">▼</span>
+          </div>
+          <div class="faq-item-body">
+            <p>We want you to love your Dar Al Haya abaya. We offer a 14-day exchange window for standard-sized items in unworn, original condition with all tags and the presentation gift box intact. Contact our concierge to arrange an exchange.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Extended Luxury Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand-logo">
+            <img src="assets/images/logo.svg" alt="Dar Al Haya Dubai">
+          </a>
+          <p class="footer-bio-text">
+            Dar Al Haya brings the authentic art of Dubai luxury modest fashion to Australian and international clients. Handcrafted in our Dubai atelier from world-class silks and Nidha, delivered express to Sydney, Melbourne, Brisbane, and Perth.
+          </p>
+          <div class="footer-australia-badge">
+            <span>🇦🇺</span> Dedicated Australia Delivery &amp; Sizing
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Explore Collections</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="index.html">Home</a></li>
+            <li class="footer-link-item"><a href="about.html">About Us (Our Story)</a></li>
+            <li class="footer-link-item"><a href="collections.html">Our Collections</a></li>
+            <li class="footer-link-item"><a href="gallery.html">Lookbook &amp; Gallery</a></li>
+            <li class="footer-link-item"><a href="delivery.html">Australia Delivery Info</a></li>
+            <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
+            <li class="footer-link-item"><a href="shop.html">Full Catalog Showcase</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Australian Client Care</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>+61 488 892 341 (WhatsApp / Call)</span>
+            </li>
+            <li class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>concierge@daralhaya.com.au</span>
+            </li>
+            <li class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke-width="1.8"/></svg>
+              <span>Suite 402, 160 Castlereagh St, Sydney NSW 2000</span>
+            </li>
+            <li class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="1.8"/><polyline points="12 6 12 12 16 14" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Mon–Sat: 9:00 AM – 7:00 PM (AEST)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">VIP Private Drops</h4>
+          <p style="font-size:0.86rem; color:#BDB2A5; line-height:1.6;">
+            Subscribe to receive private invitations to new Dubai abaya capsule drops, Ramadan releases, and Australian VIP trunk shows.
+          </p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Dar Al Haya VIP.');">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+            <button type="submit" class="btn-newsletter-submit">Join</button>
+          </form>
+
+          <div class="footer-social-wrap">
+            <div style="font-size:0.8rem; color:var(--color-gold-light); margin-bottom:8px; font-weight:500;">Connect on Social Media:</div>
+            <div class="social-icons-row">
+              <a href="https://instagram.com/daralhaya.au" target="_blank" rel="noopener" class="btn-social-icon" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+              <a href="https://facebook.com/daralhaya.couture" target="_blank" rel="noopener" class="btn-social-icon" title="Facebook"><svg viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/></svg></a>
+              <a href="https://tiktok.com/@daralhaya_official" target="_blank" rel="noopener" class="btn-social-icon" title="TikTok"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.54c.03 2.5-1.28 4.96-3.46 6.17-2.18 1.21-4.99 1.13-7.1-.21-2.11-1.34-3.23-3.82-2.79-6.28.44-2.46 2.4-4.42 4.86-4.87 1.05-.19 2.13-.07 3.12.33v4.18c-.53-.29-1.14-.44-1.75-.43-1.07.01-2.09.61-2.61 1.55-.52.94-.46 2.12.15 3.01.61.89 1.72 1.34 2.78 1.14 1.06-.2 1.89-1.06 2.07-2.12.06-.39.06-.79.06-1.19V.02z"/></svg></a>
+              <a href="https://wa.me/61488892341" target="_blank" rel="noopener" class="btn-social-icon" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.777.818 2.791.819 3.179 0 5.767-2.587 5.768-5.766.001-3.181-2.587-5.768-5.768-5.768zm0-2c4.28 0 7.768 3.488 7.768 7.768 0 4.281-3.488 7.768-7.768 7.768-1.328 0-2.586-.347-3.69-.968l-4.341 1.139 1.161-4.241c-.7-1.164-1.098-2.498-1.098-3.698 0-4.28 3.488-7.768 7.768-7.768z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-badges-bar">
+        <div class="payment-icons-strip">
+          <span style="font-size:0.75rem; color:#A89C8E; margin-right:4px;">Secure Australian Payments:</span>
+          <span class="payment-badge">Afterpay</span>
+          <span class="payment-badge">Klarna</span>
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Mastercard</span>
+          <span class="payment-badge">AMEX</span>
+          <span class="payment-badge">Apple Pay</span>
+          <span class="payment-badge">PayPal</span>
+        </div>
+        <div class="delivery-partners-strip">
+          <span>Official Logistics:</span>
+          <span class="payment-badge">DHL Express</span>
+          <span class="payment-badge">Australia Post</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 <strong>Dar Al Haya Palace</strong>. All rights reserved. Crafted in Dubai for Australia &amp; Worldwide.</div>
+        <ul class="footer-nav-links-row">
+          <li><a href="index.html">Home</a></li>
+          <li>|</li>
+          <li><a href="about.html">About Us</a></li>
+          <li>|</li>
+          <li><a href="collections.html">Our Collections</a></li>
+          <li>|</li>
+          <li><a href="shop.html">Catalog Showcase</a></li>
+          <li>|</li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li>|</li>
+          <li><a href="delivery.html">Delivery Information</a></li>
+          <li>|</li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/61488892341?text=Hello%20Dar%20Al%20Haya%20Australia%2C%20I%20have%20an%20inquiry%20regarding%20your%20luxury%20abayas." target="_blank" rel="noopener" class="floating-whatsapp-btn" aria-label="Chat with our Australian Stylist on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.777.818 2.791.819 3.179 0 5.767-2.587 5.768-5.766.001-3.181-2.587-5.768-5.768-5.768zm0-2c4.28 0 7.768 3.488 7.768 7.768 0 4.281-3.488 7.768-7.768 7.768-1.328 0-2.586-.347-3.69-.968l-4.341 1.139 1.161-4.241c-.7-1.164-1.098-2.498-1.098-3.698 0-4.28 3.488-7.768 7.768-7.768z"/></svg>
+    <span>Chat with Australian Stylist</span>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

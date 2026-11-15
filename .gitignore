@@ -1,0 +1,15 @@
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+
+# IDE & Config
+.idea/
+.vscode/
+.gemini/
+
+# Temporary Scripts
+*.pyc
+__pycache__/
